@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xPERT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(9, 0, 0, 0.12);
+            background-color: #318eea;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .hero-section {
+            background-image: url('hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #070000;
+            overflow: hidden;
+        }
+
+        .hero-section h1 {
+            font-size: 4rem;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn-primary {
+            background-color: #0459d8;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1.1rem;
+            margin-right: 1rem;
+        }
+
+        .btn-primary:hover {
+            background-color: #408af4;
+        }
+
+        .footer {
+            padding: 0.5rem 0;
+            background-color: #74bfed;
+            color: #070000;
+        }
+
+        .footer a {
+            color: #ffffff;
+        }
+
+        .footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Xpert</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero section -->
+<section class="hero-section">
+    <div class="container">
+        <h1>Welcome to xPERT</h1>
+        <p>Your one-stop destination for all your problems.</p>
+        <a class="btn btn-primary btn-lg" th:href="@{/register}" role="button">Register</a>
+        <a class="btn btn-secondary btn-lg" th:href="@{/login}" role="button">Login</a>
+    </div>
+</section>
+
+<!-- Main content -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-xl-9 mx-auto">
+            <p class="lead text-center">We are dedicated to providing expert solutions for all your needs.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <span class="text-muted">© 2024 Xpert, By DG. All rights reserved.</span>
+        <ul class="list-inline float-end">
+            <li class="list-inline-item">
+                <a class="text-muted" href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a class="text-muted" href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a class="text-muted" href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a class="text-muted" href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Bootstrap and jQuery scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
